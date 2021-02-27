@@ -1,0 +1,371 @@
+* {
+  font-family: Helvetica, arial, sans-serif;
+  margin: 0px;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: .2em;
+  top: 0;
+}
+
+header a {
+  color: white;
+}
+
+footer {
+  font-size: 2em;
+  font-style: bold;
+  color: black;
+  text-align: center;
+  padding: .5em;
+  margin-top: 3em;
+}
+
+.menu {
+  width: 90vw;
+  margin: auto;
+  margin-top: 1em;
+  /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em; */
+}
+
+.menu li {
+  font-size: 1.5em;
+  margin-top: 1em;
+  list-style: none;
+  border: solid black;
+  border-radius: 2px;
+}
+
+.rndm {
+  background-image: url(https://st2.depositphotos.com/1005409/8956/i/600/depositphotos_89561732-stock-photo-black-and-white-tv-noise.jpg);
+  fill-opacity: .5;
+}
+
+#imgWrap {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#divImage {
+  position: relative;
+  width: 90vw;
+  margin: auto;
+  -webkit-animation: divImage .5s;
+          animation: divImage .5s;
+  border-radius: 5%;
+  z-index: -1;
+}
+
+.rndm-desc {
+  background-color: white;
+  font-size: 1.2em;
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+.btn-rndm {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -ms-grid;
+  display: grid;
+  width: 50%;
+  margin: auto;
+  font-size: 2rem;
+  padding: .2em;
+  margin-top: 5%;
+  border-radius: 5%;
+  border: none;
+}
+
+/* RDS_galeria */
+.rds-perfil {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr 1fr;
+      grid-template-columns: .5fr 1fr;
+}
+
+.rds-instaPic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 1em;
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+  -webkit-animation: galeria  .5s ease  backwards;
+          animation: galeria  .5s ease  backwards;
+}
+
+.rds-titulo h2 {
+  padding-top: 2em;
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.rds-descripcion {
+  width: 50%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.rds-nav {
+  width: 80vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .4fr .2fr .4fr;
+      grid-template-columns: .4fr .2fr .4fr;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.rds-nav a {
+  color: black;
+  text-align: center;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: .3em;
+          column-gap: .3em;
+  -webkit-animation: galeria .5s ease  backwards;
+          animation: galeria .5s ease  backwards;
+}
+
+a .regresar {
+  text-align: center;
+  font-style: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.rds-nav a {
+  border: solid black .1em;
+  padding: .5em;
+}
+
+.galeria img {
+  height: auto;
+  width: 100%;
+}
+
+/* residuos_residuos_residuos_residuos_ */
+#RDimg img {
+  width: 100%;
+  margin-bottom: 2em;
+  -webkit-animation: galeria .5s linear backwards;
+          animation: galeria .5s linear backwards;
+}
+
+#RDtxt {
+  font-size: 1.5em;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2em;
+  -webkit-animation: RDtxt .5s ease-out backwards;
+          animation: RDtxt .5s ease-out backwards;
+}
+
+#RDtxt h1 {
+  margin-bottom: 1em;
+}
+
+#RDtxt p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#RDtxt h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#RDtxt ol {
+  margin: auto;
+  padding: 2em;
+  width: 100%;
+}
+
+#RDtxt li {
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+#autor {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: right;
+  width: 100%;
+}
+
+#autor a {
+  font-style: bold;
+  font-size: .9em;
+  color: black;
+}
+
+#RDimgXtra img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#pieDfoto {
+  margin: 0;
+  font-size: .7em;
+  text-align: center;
+}
+
+.RDpar {
+  margin-top: 0;
+  font-size: 2em;
+  font-style: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+ul li {
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@-webkit-keyframes RDtxt {
+  0% {
+    color: lime;
+    opacity: 0%;
+  }
+  50% {
+    color: lime;
+    opacity: 100%;
+  }
+  100% {
+    color: black;
+    opacity: 100%;
+  }
+}
+
+@keyframes RDtxt {
+  0% {
+    color: lime;
+    opacity: 0%;
+  }
+  50% {
+    color: lime;
+    opacity: 100%;
+  }
+  100% {
+    color: black;
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes galeria {
+  from {
+    -webkit-filter: hue-rotate(180deg) saturate(200%);
+            filter: hue-rotate(180deg) saturate(200%);
+  }
+  to {
+    -webkit-filter: hue-rotate(0) saturate(100%);
+            filter: hue-rotate(0) saturate(100%);
+  }
+}
+
+@keyframes galeria {
+  from {
+    -webkit-filter: hue-rotate(180deg) saturate(200%);
+            filter: hue-rotate(180deg) saturate(200%);
+  }
+  to {
+    -webkit-filter: hue-rotate(0) saturate(100%);
+            filter: hue-rotate(0) saturate(100%);
+  }
+}
+
+@-webkit-keyframes divImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes divImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 514px) {
+  #imgWrap {
+    width: 60%;
+  }
+  #divImage {
+    width: 50vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

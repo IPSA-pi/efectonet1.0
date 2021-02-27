@@ -1,0 +1,26 @@
+
+
+@keyframes blur {
+    0% {filter: blur(20px);}    
+    100% {filter: blur(0);}
+}
+
+@keyframes RDtxt {
+    0% {color: lime; opacity: 0%;}
+    50% {color: lime; opacity: 100%;}
+    100% {color: black; opacity: 100%;}
+}
+
+@keyframes galeria{
+    from {filter:hue-rotate(180deg) saturate(200%);}
+    to {filter:hue-rotate(0)        saturate(100%);}
+}
+
+@keyframes divImage {
+    0% {opacity: 0;}    
+    100% {opacity: 1;}
+
+    0% {transform: translateY(10px);}
+    100%{transform: translateY(0);}
+
+}

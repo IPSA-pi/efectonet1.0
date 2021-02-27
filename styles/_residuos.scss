@@ -1,0 +1,78 @@
+/* residuos_residuos_residuos_residuos_ */
+
+#RDimg img{
+    width: 100%;
+    margin-bottom: 2em;
+    animation: galeria .5s linear backwards; 
+}
+
+#RDtxt{
+    font-size: 1.5em;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2em;   
+    animation: RDtxt .5s ease-out backwards;    
+}
+
+#RDtxt h1{
+    margin-bottom: 1em;        
+}
+
+#RDtxt p{
+    margin-top: 1em;  
+    margin-bottom: 1em;  
+}
+
+#RDtxt h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#RDtxt ol { 
+    margin: auto;    
+    padding: 2em;
+    width:100%;   
+}
+
+#RDtxt li{
+    margin-bottom: 2em;   
+    font-size: 1em;    
+}
+
+#autor{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: right;  
+    width:100%;     
+}
+
+#autor a{        
+    font-style: bold;
+    font-size: .9em;    
+    color: black;   
+}
+
+#RDimgXtra img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#pieDfoto {
+    margin: 0;
+    font-size: .7em;
+    text-align: center;
+}
+
+.RDpar{
+    margin-top: 0;
+    font-size: 2em;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;    
+}
+
+ul li{
+    margin-left: 1em;
+    padding-left: 1em;
+}

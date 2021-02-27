@@ -1,0 +1,48 @@
+.rndm{   
+    background-image: url(https://st2.depositphotos.com/1005409/8956/i/600/depositphotos_89561732-stock-photo-black-and-white-tv-noise.jpg);
+    fill-opacity: .5;
+}
+
+
+
+#imgWrap {    
+    height: 70vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+#divImage{   
+    position: relative;    
+    width: 90vw;
+    margin: auto;
+    animation: divImage .5s;
+    border-radius: 5%;
+    z-index: -1;
+}
+
+
+.rndm-desc{
+    background-color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1rem;
+    border-radius: 5%;
+    
+}
+
+.btn-rndm{    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    width: 50%;
+    margin: auto;
+    font-size: 2rem;
+    padding: .2em;     
+    margin-top: 5%;
+    border-radius: 5%;
+    border: none;
+}
