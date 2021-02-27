@@ -1,16 +1,27 @@
+
+
 .menu {
-    width: 90vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    width: 100vw;
     margin: auto;
-    margin-top: 1em;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1em; */
+
+        li{
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;        
+        height: 30vh;    
+        font-size: 1.5em;    
+        list-style: none;
+        border: solid black;
+        border-width: 10px;
+        box-sizing: border-box;
+            
+            a{
+                color: black;        
+                font-size: 1rem;        
+            }        
+        }    
 }
 
-.menu li{
-    font-size: 1.5em;
-    margin-top: 1em;
-    list-style: none;
-    border: solid black;
-    border-radius: 2px;
-}

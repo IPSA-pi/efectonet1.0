@@ -18,7 +18,7 @@ function generator() {
     console.log(x);
     if (x != undefined) {
         document.getElementById('divImage').innerHTML=`
-        <img src="momos-webp/momo${x}.webp" id="divImage">
+        <img src="poryectos/randomimage/momos-webp/momo${x}.webp" id="divImage">
     `;
         
     } else {

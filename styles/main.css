@@ -1,6 +1,6 @@
 * {
   font-family: Helvetica, arial, sans-serif;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   text-decoration: none;
   -webkit-box-sizing: border-box;
@@ -8,6 +8,16 @@
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
   width: 100%;
   background-color: black;
   text-align: center;
@@ -29,20 +39,36 @@ footer {
 }
 
 .menu {
-  width: 90vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100vw;
   margin: auto;
-  margin-top: 1em;
-  /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1em; */
 }
 
 .menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 30vh;
   font-size: 1.5em;
-  margin-top: 1em;
   list-style: none;
   border: solid black;
-  border-radius: 2px;
+  border-width: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu li a {
+  color: black;
+  font-size: 1rem;
 }
 
 .rndm {
@@ -245,11 +271,6 @@ a .regresar {
   font-style: bold;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-}
-
-ul li {
-  margin-left: 1em;
-  padding-left: 1em;
 }
 
 @-webkit-keyframes blur {
