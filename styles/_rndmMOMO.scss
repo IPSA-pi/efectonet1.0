@@ -1,4 +1,20 @@
-#imgWrap {    
+
+
+.rndm{
+    scroll-snap-align: start;
+    height: 100vh;
+    
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/modern-abstract-terrazzo-pattern-looly-elzayat.jpg);  
+}
+.rndm2{
+    scroll-snap-align: start;
+    height: 100vh;
+    
+    background-image: url(https://gelatinademosaico.com/wp-content/uploads/2017/12/6.-Gelatina-de-mosaico-con-crema-300x225.jpg);  
+}
+
+#imgWrap {   
+    position: relative; 
     height: 70vh;
     display: flex;
     justify-content: center; 

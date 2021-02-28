@@ -38,32 +38,34 @@ footer {
   margin-top: 3em;
 }
 
+body {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
 .menu {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  scroll-snap-align: start;
   width: 100vw;
   margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 30vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
   font-size: 1.5em;
   list-style: none;
   border: solid black;
-  border-width: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  border-width: 1px;
 }
 
 .menu li a {
@@ -72,11 +74,19 @@ footer {
 }
 
 .rndm {
-  background-image: url(https://st2.depositphotos.com/1005409/8956/i/600/depositphotos_89561732-stock-photo-black-and-white-tv-noise.jpg);
-  fill-opacity: .5;
+  scroll-snap-align: start;
+  height: 100vh;
+  background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/modern-abstract-terrazzo-pattern-looly-elzayat.jpg);
+}
+
+.rndm2 {
+  scroll-snap-align: start;
+  height: 100vh;
+  background-image: url(https://gelatinademosaico.com/wp-content/uploads/2017/12/6.-Gelatina-de-mosaico-con-crema-300x225.jpg);
 }
 
 #imgWrap {
+  position: relative;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,13 +100,11 @@ footer {
 }
 
 #divImage {
-  position: relative;
   width: 90vw;
   margin: auto;
   -webkit-animation: divImage .5s;
           animation: divImage .5s;
   border-radius: 5%;
-  z-index: -1;
 }
 
 .rndm-desc {

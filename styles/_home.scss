@@ -1,22 +1,23 @@
 
-
-.menu {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;    
+body{
+    scroll-snap-type: y mandatory;
+}
+.menu {    
+    scroll-snap-align: start;
     width: 100vw;
     margin: auto;
-
+    box-sizing: border-box;
         li{
+            
         display: flex;
-        justify-content: right;
-        align-items: flex-end;        
-        height: 30vh;    
+        justify-content: center;
+        align-items: center;        
+        height: 5rem;
         font-size: 1.5em;    
         list-style: none;
-        border: solid black;
-        border-width: 10px;
-        box-sizing: border-box;
+        border:  solid black;
+        border-width: 1px;
+        
             
             a{
                 color: black;        
