@@ -1,19 +1,37 @@
 
+.cont-rndm{
+    position: relative;  
+    height: 100vh;  
+}
 
 .rndm{
-    scroll-snap-align: start;
-    height: 100vh;
-    
-    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/modern-abstract-terrazzo-pattern-looly-elzayat.jpg);  
-}
-.rndm2{
-    scroll-snap-align: start;
-    height: 100vh;
-    
-    background-image: url(https://gelatinademosaico.com/wp-content/uploads/2017/12/6.-Gelatina-de-mosaico-con-crema-300x225.jpg);  
+    position: absolute;
+    z-index: 1;
 }
 
-#imgWrap {   
+.rndm-bg{
+    position: absolute;    
+    height: 100vh;
+    width: 100vw;  
+    align-items: center;      
+}
+
+
+.rndm-bg_tierra1{
+    width: 100%;
+    z-index: -2;     
+    object-fit: cover;           
+}
+
+.rndm-bg_tierra2{
+    
+    object-fit: scale-down;    
+    width: 20%;
+    margin: auto;
+    z-index: -1;          
+}
+
+.rndm__img {   
     position: relative; 
     height: 70vh;
     display: flex;
@@ -21,17 +39,15 @@
     align-items: center;    
 }
 
-#divImage{   
-       
+#divImage{          
     width: 90vw;
     margin: auto;
     animation: divImage .5s;
-    border-radius: 5%;
-    
+    border-radius: 5%;    
 }
 
 
-.rndm-desc{
+.rndm__desc{
     background-color: white;
     font-size: 1.2em;
     text-align: justify;
@@ -43,7 +59,7 @@
     
 }
 
-.btn-rndm{    
+.rndm__btn{    
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;

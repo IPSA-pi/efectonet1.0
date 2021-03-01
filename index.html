@@ -19,36 +19,37 @@
 
 
     <nav role="navigation" class="main-menu">
-        <ul class="menu">
-            <li><a href="proyectos.html">proyectos</a></li>
+        <ul class="main-menu__list">
+            <li><a href="pages/proyectos.html">proyectos</a></li>
             <li><a href="blog.html">blog</a></li>
             <li><a href="videos.html">videos</a></li>
-            <li><a href="correo-ilustrado.html">correo ilustrado</a></li>
-            <li><a href="tianguis.html">tianguis</a></li>
+            <li><a href="correo-ilustrado.html">acerca de</a></li>
+            <li><a href="tianguis.html">anúnciate</a></li>
             <li><a href="colabora.html">colabora</a></li>
         </ul>
     </nav>
 
-    
-
-    <div class="rndm">
-        <div class="bg-rndm"></div>
-        <div id="imgWrap">
-            <div id="divImage"></div>                      
-        </div>
-        <script src="main.js"></script>
-        <button onclick="generator()" class="btn-rndm">desentierra otro momo</button>
+    <div class="cont-rndm">
         
-        <p class="rndm-desc">
-            Las siguientes imágenes fueron realizadas entre el 2017 y el 2020. Pica el boton para saltar en el tiempo.
-        </p>
-       
+        <div class="rndm">                
+            <div class="rndm__img">
+                <div id="divImage"></div>                      
+            </div>
+            <script src="scripts/rndm-img.js"></script>
+            <button onclick="generator()" class="rndm__btn">desentierra otro momo</button>
+            
+            <!-- <p class="rndm__desc">
+                Las siguientes imágenes fueron realizadas entre el 2017 y el 2020. Pica el boton para saltar en el tiempo.
+            </p>         -->
+        </div>
+
+        <div class="rndm-bg">
+            <img src="https://modernfarmer.com/wp-content/uploads/2015/05/soil.jpeg" class="rndm-bg rndm-bg_tierra1">
+            
+        </div>  
     </div>
 
-    <div class="rndm2">
-       
-       
-    </div>
+    
     
 
 

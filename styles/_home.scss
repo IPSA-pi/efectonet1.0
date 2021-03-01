@@ -2,27 +2,40 @@
 body{
     scroll-snap-type: y mandatory;
 }
-.menu {    
+
+header {   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;     
+    width: 100%;  
+    background-color: black;         
+           
+    a{
+         color: white;
+    }
+}
+
+.main-menu{
+    height: 90vh;
+}
+
+.main-menu__list {    
     scroll-snap-align: start;
-    width: 100vw;
+    width: 100vw;    
     margin: auto;
     box-sizing: border-box;
-        li{
-            
+        a{            
         display: flex;
-        justify-content: center;
-        align-items: center;        
-        height: 5rem;
-        font-size: 1.5em;    
+        // justify-content: center;
+        // align-items: center;        
+        height: 15vh;
+        font-size: 2rem;    
         list-style: none;
-        border:  solid black;
-        border-width: 1px;
-        
+        border:  1px solid black;         
+        color: black;        
             
-            a{
-                color: black;        
-                font-size: 1rem;        
-            }        
+                 
         }    
 }
 

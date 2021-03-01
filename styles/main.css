@@ -7,28 +7,6 @@
           box-sizing: border-box;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  width: 100%;
-  background-color: black;
-  text-align: center;
-  padding: .2em;
-  top: 0;
-}
-
-header a {
-  color: white;
-}
-
 footer {
   font-size: 2em;
   font-style: bold;
@@ -43,15 +21,7 @@ body {
       scroll-snap-type: y mandatory;
 }
 
-.menu {
-  scroll-snap-align: start;
-  width: 100vw;
-  margin: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.menu li {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,31 +31,73 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 5rem;
-  font-size: 1.5em;
-  list-style: none;
-  border: solid black;
-  border-width: 1px;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
 }
 
-.menu li a {
+header a {
+  color: white;
+}
+
+.main-menu {
+  height: 90vh;
+}
+
+.main-menu__list {
+  scroll-snap-align: start;
+  width: 100vw;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-menu__list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  font-size: 2rem;
+  list-style: none;
+  border: 1px solid black;
   color: black;
-  font-size: 1rem;
+}
+
+.cont-rndm {
+  position: relative;
+  height: 100vh;
 }
 
 .rndm {
-  scroll-snap-align: start;
-  height: 100vh;
-  background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/modern-abstract-terrazzo-pattern-looly-elzayat.jpg);
+  position: absolute;
+  z-index: 1;
 }
 
-.rndm2 {
-  scroll-snap-align: start;
+.rndm-bg {
+  position: absolute;
   height: 100vh;
-  background-image: url(https://gelatinademosaico.com/wp-content/uploads/2017/12/6.-Gelatina-de-mosaico-con-crema-300x225.jpg);
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#imgWrap {
+.rndm-bg_tierra1 {
+  width: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rndm-bg_tierra2 {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 20%;
+  margin: auto;
+  z-index: -1;
+}
+
+.rndm__img {
   position: relative;
   height: 70vh;
   display: -webkit-box;
@@ -107,7 +119,7 @@ body {
   border-radius: 5%;
 }
 
-.rndm-desc {
+.rndm__desc {
   background-color: white;
   font-size: 1.2em;
   text-align: justify;
@@ -118,7 +130,7 @@ body {
   border-radius: 5%;
 }
 
-.btn-rndm {
+.rndm__btn {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   display: -ms-grid;
