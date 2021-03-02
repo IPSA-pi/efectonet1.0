@@ -6,14 +6,40 @@
     box-sizing: border-box;
 }
 
-
-
-footer{  
-    font-size: 2em;
-    font-style: bold;              
-    color: black;
-    text-align: center;
-    padding: .5em;
-    margin-top: 3em;    
+header {   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;     
+    width: 100%;  
+    background-color: black;                 
+    a{
+         color: white;
+    }
 }
 
+.ftr{      
+    position: fixed;      
+}
+
+.ftr__back{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: black;    
+    bottom: -100px;
+    left: -100px;
+    transform: rotate(45deg);
+}
+
+.ftr__flecha {
+    position: absolute;
+    font-size: 4em;
+    font-style: bold;              
+    color: white;
+    bottom: 130px;
+    left: 70px;
+    transform: rotate(-45deg);   
+
+
+}

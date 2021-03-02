@@ -1,27 +1,15 @@
-* {
-  font-family: Helvetica, arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.main-menu {
+  height: 90vh;
 }
 
-footer {
-  font-size: 2em;
-  font-style: bold;
-  color: black;
-  text-align: center;
-  padding: .5em;
-  margin-top: 3em;
+.main-menu__list {
+  margin: auto;
+  list-style: none;
 }
 
-body {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-header {
+.main-menu__list a {
+  width: 100vw;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,35 +19,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
-  width: 100%;
-  background-color: black;
-}
-
-header a {
-  color: white;
-}
-
-.main-menu {
-  height: 90vh;
-}
-
-.main-menu__list {
-  scroll-snap-align: start;
-  width: 100vw;
-  margin: auto;
+  font-size: 2rem;
+  border: .5px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.main-menu__list a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 15vh;
-  font-size: 2rem;
-  list-style: none;
-  border: 1px solid black;
   color: black;
 }
 
@@ -69,7 +32,9 @@ header a {
 }
 
 .rndm {
+  width: 100vw;
   position: absolute;
+  margin: auto;
   z-index: 1;
 }
 
@@ -145,6 +110,10 @@ header a {
 }
 
 /* RDS_galeria */
+.insta-feik {
+  position: relative;
+}
+
 .rds-perfil {
   display: -ms-grid;
   display: grid;
@@ -408,5 +377,59 @@ a .regresar {
   #divImage {
     width: 50vw;
   }
+}
+
+* {
+  font-family: Helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+header a {
+  color: white;
+}
+
+.ftr {
+  position: fixed;
+}
+
+.ftr__back {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  bottom: -100px;
+  left: -100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ftr__flecha {
+  position: absolute;
+  font-size: 4em;
+  font-style: bold;
+  color: white;
+  bottom: 130px;
+  left: 70px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */
