@@ -15,8 +15,13 @@
         align-items: center;        
         font-size: 2rem;            
         border:  .5px solid black;
-         box-sizing: border-box;         
-        color: black;                              
+        box-sizing: border-box;         
+        color: black;                   
+        padding: 2rem;           
         }    
+}
+
+.main-menu__list_blk {
+    background-color: black;
 }
 

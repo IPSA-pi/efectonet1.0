@@ -24,6 +24,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: black;
+  padding: 2rem;
+}
+
+.main-menu__list_blk {
+  background-color: black;
 }
 
 .cont-rndm {
@@ -260,6 +265,22 @@ a .regresar {
   font-style: bold;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @-webkit-keyframes blur {

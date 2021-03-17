@@ -14,7 +14,7 @@ var ranNums = shuffle(arr);
 function generator() {
     
     var x = ranNums.next().value;
-    // var x = undefined;
+    //var x = undefined;
     console.log(x);
     if (x != undefined) {
         document.getElementById('divImage').innerHTML=`
