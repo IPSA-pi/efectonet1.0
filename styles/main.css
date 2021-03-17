@@ -267,12 +267,15 @@ a .regresar {
   text-align: center;
 }
 
+.video-cont {
+  height: 90vh;
+  width: 100vw;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 .videoWrapper iframe {

@@ -1,12 +1,15 @@
 .video-cont {
-    height: ;
+    height: 90vh;
+    width:100vw
+    
 }
 
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
-    // transform: rotate(90deg);
+    
+    
 }
 
 .videoWrapper iframe {
