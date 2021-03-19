@@ -1,0 +1,104 @@
+.cover {  
+    position: relative;  
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;          
+}
+
+.tcont{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: white;
+    overflow: hidden;
+    animation: scroll .5s .2s backwards ; 
+    
+}
+
+.cover__t1 {   
+    font-size: 1.4rem;    
+    text-align: left;
+    padding: 1.2rem;   
+    padding-bottom: .1rem; 
+    margin: 0; 
+      
+}
+
+.cover__t2 {      
+    display: flex;    
+    font-size: 1rem;
+    padding: 1rem;
+    position: relative; 
+    width: 100%;   
+    animation: scroll .5s .4s backwards;    
+}
+
+
+
+@keyframes scroll {
+    0%{left:100vw;}
+    100%{left: 0;}
+}
+
+.cover__logo{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    
+    .logo {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: .2rem .2rem .2rem black;
+                
+    }
+}
+
+.cover__bg {        
+    position: fixed;    
+    opacity: 1;
+    z-index: -1;
+}
+
+.cover__bg img {    
+    width: 500% ;
+    position: relative;
+    left: -200%;
+}
+
+// _________ARTICLE_______________________
+
+.article {
+    background-color: white;
+    img {
+        width: 100vw;
+        margin-bottom: 1.5rem;
+    }
+
+    video{
+        width: 100vw;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.article__fecha {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.article__paragraph {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 1.8rem;
+    font-size: 1.5rem;
+
+    a { 
+        color: green;
+    }
+
+    video{
+        width: 100vw;
+    }
+}
+

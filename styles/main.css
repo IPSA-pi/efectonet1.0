@@ -1,3 +1,57 @@
+* {
+  font-family: Helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+header a {
+  color: white;
+}
+
+.ftr {
+  position: fixed;
+}
+
+.ftr__back {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  bottom: -100px;
+  left: -100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ftr__flecha {
+  position: absolute;
+  font-size: 4em;
+  font-style: bold;
+  color: white;
+  bottom: 130px;
+  left: 70px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .main-menu {
   height: 90vh;
 }
@@ -13,13 +67,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: .5px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -268,8 +323,9 @@ a .regresar {
 }
 
 .video-cont {
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .videoWrapper {
@@ -284,6 +340,121 @@ a .regresar {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.cover {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tcont {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: white;
+  overflow: hidden;
+  -webkit-animation: scroll .5s .2s backwards;
+          animation: scroll .5s .2s backwards;
+}
+
+.cover__t1 {
+  font-size: 1.4rem;
+  text-align: left;
+  padding: 1.2rem;
+  padding-bottom: .1rem;
+  margin: 0;
+}
+
+.cover__t2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  -webkit-animation: scroll .5s .4s backwards;
+          animation: scroll .5s .4s backwards;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.cover__logo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.cover__logo .logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: .2rem .2rem .2rem black;
+}
+
+.cover__bg {
+  position: fixed;
+  opacity: 1;
+  z-index: -1;
+}
+
+.cover__bg img {
+  width: 500%;
+  position: relative;
+  left: -200%;
+}
+
+.article {
+  background-color: white;
+}
+
+.article img {
+  width: 100vw;
+  margin-bottom: 1.5rem;
+}
+
+.article video {
+  width: 100vw;
+  margin-bottom: 1.5rem;
+}
+
+.article__fecha {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.article__paragraph {
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.article__paragraph a {
+  color: green;
+}
+
+.article__paragraph video {
+  width: 100vw;
 }
 
 @-webkit-keyframes blur {
@@ -392,68 +563,5 @@ a .regresar {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-}
-
-@media only screen and (min-width: 514px) {
-  #imgWrap {
-    width: 60%;
-  }
-  #divImage {
-    width: 50vw;
-  }
-}
-
-* {
-  font-family: Helvetica, arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  width: 100%;
-  background-color: black;
-}
-
-header a {
-  color: white;
-}
-
-.ftr {
-  position: fixed;
-}
-
-.ftr__back {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  bottom: -100px;
-  left: -100px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.ftr__flecha {
-  position: absolute;
-  font-size: 4em;
-  font-style: bold;
-  color: white;
-  bottom: 130px;
-  left: 70px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */
