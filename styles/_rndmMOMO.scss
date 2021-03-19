@@ -6,31 +6,8 @@
 
 .rndm{
     width: 100vw;
-    position: absolute;
-    margin: auto;
-    z-index: 1;
-}
-
-.rndm-bg{
     position: absolute;    
-    height: 100vh;
-    width: 100vw;  
-    align-items: center;      
-}
-
-
-.rndm-bg_tierra1{
-    width: 100%;
-    z-index: -2;     
-    object-fit: cover;           
-}
-
-.rndm-bg_tierra2{
-    
-    object-fit: scale-down;    
-    width: 20%;
-    margin: auto;
-    z-index: -1;          
+    z-index: 1;
 }
 
 .rndm__img {   
@@ -38,18 +15,24 @@
     height: 70vh;
     display: flex;
     justify-content: center; 
-    align-items: center;    
+    align-items: center;        
 }
 
 #divImage{          
-    width: 90vw;
-    margin: auto;
-    animation: divImage .5s;
-    border-radius: 5%;    
+    width: 90vw;    
+    border-radius: 5%;
+    animation: slideIn .5s;  
+    
+    @keyframes slideIn {
+        0% {opacity: 0;}    
+        100% {opacity: 1;}
+        0% {transform: translateY(10px);}
+        100%{transform: translateY(0);}
+    }   
 }
 
 
-.rndm__desc{
+.rndm__desc {
     background-color: white;
     font-size: 1.2em;
     text-align: justify;
@@ -57,8 +40,7 @@
     margin: auto;
     margin-top: 1em;
     padding: 1rem;
-    border-radius: 5%;
-    
+    border-radius: 5%;    
 }
 
 .rndm__btn{    
@@ -72,4 +54,18 @@
     margin-top: 5%;
     border-radius: 5%;
     border: none;
+}
+
+.rndm-bg{
+    position: absolute;    
+    height: 100vh;
+    width: 100vw;  
+    align-items: center;      
+}
+
+
+.rndm-bg_tierra1 {
+    width: 100%;
+    z-index: -2;     
+    object-fit: cover;           
 }
