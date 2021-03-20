@@ -52,18 +52,26 @@ header a {
           transform: rotate(-45deg);
 }
 
+.mainMenu-BG {
+  height: 80vh;
+}
+
+.mainMenu-BG img {
+  height: 100%;
+}
+
 .main-menu {
+  position: relative;
   height: 90vh;
 }
 
 .main-menu__list {
-  margin: auto;
-  list-style: none;
+  position: relative;
 }
 
 .main-menu__list a {
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,6 +92,14 @@ header a {
 
 .main-menu__list_blk {
   background-color: black;
+}
+
+.mmBG {
+  height: 60vh;
+}
+
+.mmBG img {
+  height: 100%;
 }
 
 .cont-rndm {
@@ -566,6 +582,16 @@ a .regresar {
   to {
     -webkit-filter: hue-rotate(0) saturate(100%);
             filter: hue-rotate(0) saturate(100%);
+  }
+}
+
+@media only screen and (min-width: 514px) {
+  * {
+    width: 70vw;
+    margin: auto;
+  }
+  .rndm__img img {
+    width: 20vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="descripcion" content="en esta página encontrarás los proyecto adicionales de @efectotv_">
         <title>efectotv_</title>
-        <link rel="icon" type="image/png" href="../pirate-flag.png">		
+        <!-- <link rel="icon" type="image/png" href="../../media/imgs/">		 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -20,21 +20,23 @@
         <div id="RDtxt">
             
             <p class="RDpar">I</p>
-            <p>Elige una fecha entre el 2011 y el 2020</p>
+            
+            <label for="rds-date">Elige una fecha entre el 2011 y el 2021
+                <input type="date" id="rds-date" name="rds" min="2011-01-01" required> 
+                <p class="btn"><button onclick="dateToString()">siguiente</button></p>
+                
+            </label>
+
+            <script>   
+                function dateToString () {
+                    let userDate = document.getElementById("rds-date").value;                    
+                    let userDateClean = userDate.replace(/-/g, "");
+                    document.getElementById('buscar').innerHTML=`<p>Busca en google imágenes: IMG ${userDateClean} </p>`;
+                }
+            </script>
 
             <p class="RDpar">II</p>
-            <p>Busca imágenes tomadas en la fecha que elegiste usando el siguiente formato: “IMG AAAAMMDD”
-            </p>
-
-            <ul>
-                <li>Escribe “img” seguido de un espacio</li>
-                <li>Seguido del <b>año</b> que elegiste</li>
-                <li>Seguido del <b>mes</b> (01-12)</li>
-                <li>Seguido del <b>día</b> (01-31)</li>
-                <p><b>Ejemplo:</b>  para encontrar imágenes del 22 de octubre del 2011 buscarías:   
-                </p>
-                <p style="text-align: center; font-style: oblique;">“IMG 20111022”</p>
-            </ul>
+            <div id="buscar"></div>
             
             <p class="RDpar">III</p>
             <p>Elige una imagen que te recuerde algo</p>

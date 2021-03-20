@@ -1,7 +1,13 @@
+@media only screen and (min-width: 514px) {
+   
+   *{
+       width: 70vw;
+       margin: auto;
+   }
 
-// @media only screen and (min-width: 514px) {
-   
-   
+   .rndm__img img{
+       width: 20vw;
+   }
    
 //     #imgWrap{
 //         width: 60%;       
@@ -10,4 +16,4 @@
 //     #divImage{
 //         width: 50vw;
 //     }  
-// }
+}
