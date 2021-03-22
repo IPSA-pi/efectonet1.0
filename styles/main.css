@@ -63,6 +63,7 @@ header a {
 .main-menu {
   position: relative;
   height: 90vh;
+  overflow: hidden;
 }
 
 .main-menu__list {
@@ -481,6 +482,10 @@ a .regresar {
   position: relative;
 }
 
+.article a {
+  color: green;
+}
+
 .article .article__fecha {
   font-size: 1rem;
   padding-left: 1rem;
@@ -495,10 +500,6 @@ a .regresar {
   font-size: 1.5rem;
 }
 
-.article .article__paragraph a {
-  color: green;
-}
-
 .article img {
   width: 100vw;
 }
@@ -509,6 +510,22 @@ a .regresar {
   margin: .2rem;
   margin-right: .5rem;
   text-align: right;
+}
+
+.article__list {
+  width: 90vw;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.article__list .pelis, .article__list .academicas, .article__list .pelis__competencia, .article__list .pelis_retrospectivas {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.article__list li {
+  margin-left: 2rem;
+  text-align: left;
 }
 
 @-webkit-keyframes blur {

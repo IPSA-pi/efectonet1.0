@@ -68,6 +68,10 @@
 .article {
     background-color: white;
     position: relative;
+    
+    a { 
+            color: green;
+        }
 
     .article__fecha {
         font-size: 1rem;
@@ -82,9 +86,7 @@
         margin-bottom: 1.5rem ;
         font-size: 1.5rem;
     
-        a { 
-            color: green;
-        }
+        
     }
 
     img {
@@ -101,5 +103,24 @@
 }
 
 
+.article__list{
+    width: 90vw;    
+    margin: auto;
+    font-size: 1.5rem;
 
+    .pelis, .academicas, .pelis__competencia, .pelis_retrospectivas{
+       margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    
+
+    li{
+        margin-left: 2rem;
+        text-align: left;
+    }
+        
+
+    
+}
 
