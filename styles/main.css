@@ -424,9 +424,6 @@ a .regresar {
 }
 
 .cover__t2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1rem;
   padding: 1rem;
   position: relative;
@@ -453,6 +450,22 @@ a .regresar {
   }
 }
 
+.cover__autor {
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  -webkit-animation: scroll .5s .6s backwards;
+          animation: scroll .5s .6s backwards;
+}
+
+.cover__autor p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  background-color: white;
+}
+
 .cover__logo {
   position: absolute;
   bottom: 1rem;
@@ -477,9 +490,17 @@ a .regresar {
   position: relative;
 }
 
+.ciudad {
+  left: -130vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
 .article {
   background-color: white;
   position: relative;
+  overflow: hidden;
 }
 
 .article a {
@@ -498,6 +519,39 @@ a .regresar {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
+}
+
+.article .full-section {
+  position: relative;
+  width: 100vw;
+  margin: auto;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.article .full-section p {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  position: absolute;
+  height: 100vh;
+  margin-top: 10%;
+}
+
+.article .full-section img {
+  height: 120vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .article img {
