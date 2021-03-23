@@ -12,7 +12,7 @@
     margin-top: 2rem;
     background-color: white;
     overflow: hidden;
-    animation: scroll .5s .2s backwards ;     
+    animation: scroll .5s .2s backwards;     
 }
 
 .cover__t1 {   
@@ -24,7 +24,7 @@
 }
 
 .cover__t2 {      
-    display: flex;    
+       
     font-size: 1rem;
     padding: 1rem;
     position: relative; 
@@ -37,6 +37,19 @@
     100%{left: 0;}
 }
 
+.cover__autor{
+    width: 80vw;
+    margin: auto;  
+    position: relative;
+    animation: scroll .5s .6s backwards;   
+    p{
+        width: fit-content;
+        padding: 1rem;
+        background-color: white; 
+    }
+    
+}
+
 .cover__logo{
     position: absolute;
     bottom: 1rem;
@@ -46,8 +59,7 @@
         color: white;
         font-size: 2rem;
         font-weight: bold;
-        text-shadow: .2rem .2rem .2rem black;
-                
+        text-shadow: .2rem .2rem .2rem black;                
     }
 }
 
@@ -59,15 +71,27 @@
 
 .cover__bg img {    
     height: 100vh;
-    position: relative;
-    
+    position: relative;  
 }
+
+.ciudad{        
+        left: -130vw;
+        object-fit: cover;
+        overflow: hidden;
+}
+
+
 
 // _________ARTICLE_______________________
 
 .article {
     background-color: white;
     position: relative;
+    overflow: hidden;
+    
+    a { 
+            color: green;
+        }
 
     .article__fecha {
         font-size: 1rem;
@@ -80,12 +104,35 @@
         margin: auto;
         margin-top: 1.5rem ;
         margin-bottom: 1.5rem ;
-        font-size: 1.5rem;
-    
-        a { 
-            color: green;
-        }
+        font-size: 1.5rem;  
     }
+
+   .full-section {
+       position: relative;
+       width: 100vw;
+       margin: auto;       
+       font-size: 1rem;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       height: 100vh;
+       overflow: hidden;
+
+       p {
+            padding: 2rem;    
+            display: flex;             
+            color: white;
+            position: absolute;  
+            height: 100vh;            
+            margin-top: 10%;
+       }
+
+       img {
+           height: 120vh;
+           object-fit: cover;
+       }
+    }
+       
 
     img {
         width: 100vw;     
@@ -101,5 +148,19 @@
 }
 
 
+.article__list{
+    width: 90vw;    
+    margin: auto;
+    font-size: 1.5rem;
 
+    .pelis, .academicas, .pelis__competencia, .pelis_retrospectivas{
+       margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    li{
+        margin-left: 2rem;
+        text-align: left;
+    }    
+}
 
