@@ -18,7 +18,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   background-color: black;
 }
 
@@ -67,11 +67,12 @@ header a {
 }
 
 .main-menu__list {
-  position: relative;
+  position: absolute;
+  width: 100vw;
+  list-style: none;
 }
 
 .main-menu__list a {
-  width: 100vw;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,18 +89,21 @@ header a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: black;
+  background-color: white;
   padding: 2rem;
 }
 
-.main-menu__list_blk {
-  background-color: black;
-}
-
 .mmBG {
-  height: 60vh;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
 }
 
 .mmBG img {
+  min-width: 481px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
   height: 100%;
 }
 
@@ -246,7 +250,7 @@ header a {
 }
 
 .rds-nav {
-  width: 80vw;
+  width: 80%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: .4fr .2fr .4fr;
@@ -656,13 +660,63 @@ a .regresar {
   }
 }
 
-@media only screen and (min-width: 514px) {
-  * {
-    width: 70vw;
+@media only screen and (min-width: 481px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+  }
+  header a {
+    color: white;
+  }
+  .main-menu__list {
+    position: absolute;
+    width: 50vw;
+    left: 25vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #divImage {
+    height: 40vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: -2;
+  }
+  .insta-feik {
+    width: 60vw;
     margin: auto;
   }
-  .rndm__img img {
-    width: 20vw;
+  #RDimg {
+    width: 100vw;
+    height: 100vh;
+    -webkit-animation: galeria .5s linear backwards;
+            animation: galeria .5s linear backwards;
+    overflow: hidden;
+    margin-bottom: 5rem;
+  }
+  #RDimg img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #RDtxt {
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
