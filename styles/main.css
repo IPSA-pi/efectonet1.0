@@ -687,7 +687,8 @@ a .regresar {
             align-items: center;
   }
   #divImage {
-    height: 40vw;
+    margin-top: 2rem;
+    height: 90%;
     -o-object-fit: contain;
        object-fit: contain;
     -webkit-box-align: center;
