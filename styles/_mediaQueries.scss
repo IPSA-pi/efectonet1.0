@@ -1,19 +1,60 @@
-@media only screen and (min-width: 514px) {
+@media only screen and (min-width: 481px) {
    
-   *{
-       width: 70vw;
-       margin: auto;
+    header {   
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;     
+        width: 100vw;  
+        background-color: black;                 
+        a{
+             color: white;
+        }
+    }
+
+    .main-menu__list {
+        position: absolute;
+        width: 50vw;
+        left: 25vw;
+        align-items: center;
+    }
+
+   #divImage{
+       margin-top: 2rem;
+       height: 90%;
+       object-fit: contain;
+       align-items: center;
+       justify-content: center;
+       z-index: -2;
    }
 
-   .rndm__img img{
-       width: 20vw;
-   }
    
-//     #imgWrap{
-//         width: 60%;       
-//     }
 
-//     #divImage{
-//         width: 50vw;
-//     }  
+
+
+    // ----------------------rds..................
+
+    .insta-feik{
+        width: 60vw;
+        margin: auto;
+    }
+
+    #RDimg {        
+        width: 100vw;
+        height: 100vh;        
+        animation: galeria .5s linear backwards; 
+        overflow: hidden;
+        margin-bottom: 5rem;
+        img{
+            
+            height: 100%;
+            object-fit: cover;         
+        }
+    }
+
+    #RDtxt {
+        width: 70vw;
+    }
+    
+
 }

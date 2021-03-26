@@ -7,9 +7,10 @@
 }
 
 .main-menu__list {                   
-    position: relative;
-        a{    
-        width: 100vw;  
+    position: absolute;
+    width: 100vw;
+    list-style: none;
+        a{              
         height: 10vh;      
         display: flex;
         text-align: center;
@@ -18,18 +19,22 @@
         font-size: 1.5rem;            
         border:  .5px solid black;
         box-sizing: border-box;         
-        color: black;                   
+        color: black;   
+        background-color: white;                
         padding: 2rem;           
         }    
 }
 
-.main-menu__list_blk {
-    background-color: black;
-}
 
 .mmBG{
-   height: 60vh;
+   height: 100vh;
+   position: absolute;
+   z-index: -1;
+   
    img{
+       min-width: 481px;
+       object-fit: cover;
+       width: 100vw;
        height: 100%;
    }
     

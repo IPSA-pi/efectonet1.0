@@ -31,7 +31,7 @@
 }
 
 .rds-nav {
-    width: 80vw;
+    width: 80%;
     display: grid;
     grid-template-columns: .4fr .2fr .4fr;
     margin: auto;    
@@ -60,8 +60,7 @@ a .regresar{
 
 .rds-nav a{
     border: solid black .1em;
-    padding: .5em;
-          
+    padding: .5em;          
 }
 
 .galeria img{
