@@ -1,5 +1,5 @@
 * {
-  font-family: Helvetica, arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -379,6 +379,19 @@ a .regresar {
 .ft-rds a {
   font-size: 4rem;
   color: black;
+}
+
+/* --PARTICIPA__PARTICIPA--PARTICIPA__PARTICIPA--PARTICIPA__PARTICIPA*/
+.formCont {
+  margin-top: 2rem;
+  margin: auto;
+  width: 90%;
+}
+
+.formCont input, .formCont label, .formCont #buscar {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .video-cont {

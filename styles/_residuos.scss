@@ -1,3 +1,71 @@
+/* RDS_galeria */
+
+.insta-feik{
+    position: relative;
+}
+
+.rds-perfil{
+    display: grid;  
+    grid-template-columns: .5fr 1fr;        
+}
+
+.rds-instaPic img{    
+    object-fit: cover;
+    padding: 1em;
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;    
+    animation: galeria  .5s ease  backwards; 
+}
+
+.rds-titulo h2{    
+    padding-top: 2em;
+    font-size: 1.5em;
+    margin-right: 1em;   
+}
+
+.rds-descripcion{
+    width: 50%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.rds-nav {
+    width: 80%;
+    display: grid;
+    grid-template-columns: .4fr .2fr .4fr;
+    margin: auto;    
+    margin-bottom: 2em;
+    a{
+        color: black;
+        text-align: center;
+    }   
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .3em;
+    animation: galeria .5s ease  backwards;        
+}
+
+a .regresar{
+    text-align: center;
+    font-style: bold;
+    text-decoration: none;
+    color: black; 
+}
+
+.rds-nav a{
+    border: solid black .1em;
+    padding: .5em;          
+}
+
+.galeria img{
+    height: auto;
+    width: 100%;    
+}
+
 /* residuos_residuos_residuos_residuos_ */
 
 #RDimg img{
@@ -6,8 +74,7 @@
     animation: galeria .5s linear backwards; 
 }
 
-#RDtxt{
-    
+#RDtxt{    
     font-size: 1.5em;
     width: 90%;
     margin: auto;
@@ -16,8 +83,7 @@
 }
 
 #RDtxt h1{
-    margin-bottom: 1em;   
-         
+    margin-bottom: 1em;            
 }
 
 #RDtxt p{
@@ -46,8 +112,7 @@
     margin-top: 2em;
     margin-bottom: 2em;
     text-align: right;  
-    width:100%;   
-     
+    width:100%;        
 }
 
 #autor a{        
@@ -88,4 +153,15 @@
     }
 }
 
+/* --PARTICIPA__PARTICIPA--PARTICIPA__PARTICIPA--PARTICIPA__PARTICIPA*/
 
+.formCont  {
+    margin-top: 2rem;
+    margin: auto;
+    width: 90%;
+    input, label, #buscar {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
