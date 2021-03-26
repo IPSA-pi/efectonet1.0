@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-            <head>  
+<head>  
                 <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XE4CBFW5JH"></script>
         <script>
@@ -10,36 +10,62 @@
 
         gtag('config', 'G-XE4CBFW5JH');
         </script>      
-        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+
         <meta charset="utf-8">
-        <meta name="descripcion" content="en esta página encontrarás los proyecto adicionales de @efectotv_">
-        <title>efectotv_</title>
-        <!-- <link rel="icon" type="image/png" href="../../media/imgs/">		 -->
+        
+       
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+        <!-- <link rel="shortcut icon" sizes="16x16" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">  -->
+        <title>efectotv_</title>
+        <meta name="descripcion" content="en esta página encontrarás los proyecto adicionales de @efectotv_">
+</head>
 
     <body>
-        <header >
+        <header>
             <h1 class="site-name">
-                <a href="rds.html">residuos digitales</a></h1>           
+                <a href="rds.html">residuos digitales</a>
+            </h1>           
         </header>
         
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuaZ6MsXEjsDf-BIxCvg79lLi62H7Cv2mMmy6QfFQQUwE-BA/formResponse?embedded=true" class="formRDS">
-            <label for="liga">Copia y pega la liga a la imagen que elegiste</label><br>
-            <input type="text" id="liga" name="entry.795767304" value="">
+        <div class="formCont">
+            <label for="rds-date">Elige una fecha entre el 2011 y el 2021
+                <input type="date" id="rds-date" name="rds" min="2011-01-01" required> 
+                <p class="btn"><button onclick="dateToString()">siguiente</button></p>
+                
+            </label>
 
-            <label for="texto">Escribe un texto</label><br>
-            <input type="text" id="texto" name="entry.1873948268" value="">
+            <script>   
+                function dateToString () {
+                    let userDate = document.getElementById("rds-date").value;                    
+                    let userDateClean = userDate.replace(/-/g, "");
+                    document.getElementById('buscar').innerHTML=`<p>Busca en google imágenes: IMG ${userDateClean} </p>`;
+                }
+            </script>
 
-            <label for="titulo">Dale un título</label><br>
-            <input type="text" id="titulo" name="entry.697563945" value="">
+            <div id="buscar"></div>
 
-            <label for="firma">Fírmala! (escribe tu nombre o seudónimo)</label><br>
-            <input type="text" id="firma" name="entry.738240505" value="">
+            <form class="formRDS" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuaZ6MsXEjsDf-BIxCvg79lLi62H7Cv2mMmy6QfFQQUwE-BA/formResponse?embedded=true">
 
-            <input type="submit" value="enviar" />
-            
-        </form>
+                
+
+                <label for="liga">Copia y pega la liga a la imagen que elegiste</label><br>
+                <input type="text" id="liga" name="entry.795767304" value=""><br>
+    
+                <label for="texto">Escribe un texto</label><br>
+                <input type="text" id="texto" name="entry.1873948268" value=""><br>
+    
+                <label for="titulo">Dale un título</label><br>
+                <input type="text" id="titulo" name="entry.697563945" value=""><br>
+    
+                <label for="firma">Fírmala! (escribe tu nombre o seudónimo)</label><br>
+                <input type="text" id="firma" name="entry.738240505" value=""><br>
+    
+                <input type="submit" value="enviar"/>
+                
+            </form>
+        </div>
+        
 
         <footer>           
             <a href="javascript:history.back()">&larr;</a>
